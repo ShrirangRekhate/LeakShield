@@ -70,9 +70,9 @@ Use proper insulation
 
 Never touch exposed wires when powered
 
-##📜 License
+# 📜 License
 MIT License © 2023 
 
-## Author
-# Shrirang Rekhate
+# Author
+## Shrirang Rekhate
 
