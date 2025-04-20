@@ -1,27 +1,55 @@
-# ⚡LeakShield-Voltage-Monitoring-and-Safety-System
+# ⚡ VoltGuard: Smart Voltage Protection System
 
-An IoT-based voltage protection system that automatically cuts off power when dangerous voltage levels are detected, with real-time monitoring through a web dashboard.
-
----
-
-## 📷 Demo Preview
-
-> ✅ Live voltage monitoring via WebSocket  
-> 🔌 Automatic relay cutoff at 15V threshold  
-> 📱 Mobile & 💻 desktop friendly interface  
+An IoT-based safety system that automatically disconnects power when voltage exceeds 15V, with real-time web monitoring and manual override capability.
 
 ---
 
-## 🛠️ Features
+## 🛡️ Safety-Critical Operation
 
-- **Real-time Voltage Tracking** - Continuous AC voltage measurement with ZMPT101B sensor
-- **Overvoltage Protection** - Instant relay cutoff when voltage exceeds safe limits
-- **Web Dashboard** - Beautiful real-time visualization of voltage data
-- **Remote Control** - Enable/disable protection system from anywhere
-- **Safety First** - Designed with fail-safe mechanisms for reliable operation
+> 🔌 **Relay Behavior**:  
+> - Normally CLOSED circuit (allows current flow)  
+> - Opens circuit (STOPS current) when:  
+>   - Voltage > 15V threshold  
+>   - System is manually disabled  
+> - Uses GPIO33 for relay control  
 
 ---
 
+## 📷 System Demo
+
+![Dashboard Interface](https://via.placeholder.com/800x450?text=Voltage+Monitoring+Dashboard)  
+*Live dashboard showing voltage reading and relay status*
+
+---
+
+## 🛠️ Key Features
+
+- **Real-time Voltage Monitoring** - ZMPT101B sensor on pin 32
+- **Safety Cutoff** - Relay on GPIO33 opens circuit at 15V
+- **Web Dashboard** - Live data visualization
+- **Dual Control** - Automatic protection + manual override
+- **Fail-Safe Design** - Defaults to safe state (circuit open)
+
+---
+
+## 🔌 Hardware Configuration
+
+| Component | ESP32 Connection |
+|-----------|------------------|
+| ZMPT101B VCC | 3.3V |
+| ZMPT101B GND | GND |
+| ZMPT101B OUT | GPIO32 |
+| Relay VCC | 5V |
+| Relay GND | GND |
+| Relay IN | GPIO33 |
+
+```cpp
+// Critical Configuration (in code)
+#define RELAY_PIN 33       // Safety cutoff control
+#define VOLTAGE_SENSOR 32  // Analog input
+#define VOLTAGE_THRESHOLD 15.0  // Cutoff threshold
+```
+---
 ## 🧩 Hardware Components
 
 | Component | Quantity |
