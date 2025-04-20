@@ -1,4 +1,4 @@
-# ⚡ VoltGuard: Smart Voltage Protection System
+# ⚡ LeakShield: Voltage Monitoring and Protection System
 
 An IoT-based safety system that automatically disconnects power when voltage exceeds 15V, with real-time web monitoring and manual override capability.
 
@@ -12,13 +12,6 @@ An IoT-based safety system that automatically disconnects power when voltage exc
 >   - Voltage > 15V threshold  
 >   - System is manually disabled  
 > - Uses GPIO33 for relay control  
-
----
-
-## 📷 System Demo
-
-![Dashboard Interface](https://via.placeholder.com/800x450?text=Voltage+Monitoring+Dashboard)  
-*Live dashboard showing voltage reading and relay status*
 
 ---
 
