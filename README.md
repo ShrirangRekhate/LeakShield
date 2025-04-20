@@ -1,5 +1,4 @@
-# LeakShield-Voltage-Monitoring-and-Safety-System
-# ⚡ VoltGuard: Smart Voltage Monitoring System
+# ⚡LeakShield-Voltage-Monitoring-and-Safety-System
 
 An IoT-based voltage protection system that automatically cuts off power when dangerous voltage levels are detected, with real-time monitoring through a web dashboard.
 
