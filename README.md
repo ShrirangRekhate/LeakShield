@@ -50,7 +50,7 @@ IN → GPIO2
 
 2. **Upload the code**:
 ```bash
-git clone https://github.com/ShrirangRekhate/VoltGuard.git
+git clone https://github.com/ShrirangRekhate/LeakShield-Voltage-Monitoring-and-Safety-System.git
 ```
 ## ⚙️ Configuration
 # Customize in code:
@@ -74,5 +74,5 @@ Never touch exposed wires when powered
 MIT License © 2023 
 
 ## Author
-#Shrirang Rekhate
+# Shrirang Rekhate
 
