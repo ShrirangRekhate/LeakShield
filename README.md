@@ -1,6 +1,6 @@
-# ⚡ LeakShield: Voltage Monitoring and Protection System
+# ⚡ LeakShield: Current Leakage Detection and Monitoring System
 
-An IoT-based safety system that automatically disconnects power when voltage exceeds 15V, with real-time web monitoring and manual override capability.
+An IoT-based safety system that automatically disconnects power in case of short circuit, with real-time web monitoring and manual override capability.
 
 ---
 
