@@ -71,7 +71,7 @@ IN → GPIO2
 
 2. **Upload the code**:
 ```bash
-git clone https://github.com/ShrirangRekhate/LeakShield-Voltage-Monitoring-and-Safety-System.git
+git clone https://github.com/ShrirangRekhate/LeakShield-Current-Leakage-Detection-and-Monitoring-System
 ```
 ## ⚙️ Configuration
 # Customize in code:
